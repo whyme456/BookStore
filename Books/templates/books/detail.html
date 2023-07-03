@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container mx-auto">
+  <dl>
+    <dt>Title</dt>
+    <dd>{{book.title}}</dd>
+    <dt>Author</dt>
+    <dd>{{book.author}}</dd>
+    <dt>Genre</dt>
+    <dd>{{book.genre}}</dd>
+    <dt>Location</dt>
+    <dd>{{book.location}}</dd>
+  </dl>
+  <a
+    href="{% url 'book:delete_book' book.id %}"
+    class="btn btn-outline-danger btn-sm"
+    >Remove Book</a
+  >
+</div>
+
+{% endblock %}

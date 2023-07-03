@@ -1,0 +1,16 @@
+.books-link {
+  font-size: 200px; /* Set font size to 200px */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center text horizontally */
+  position: absolute; /* Position the element relative to the nearest positioned ancestor */
+  top: 50%; /* Move the top edge of the element to the middle of the screen */
+  left: 50%; /* Move the left edge of the element to the middle of the screen */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element up and left by 50% of its size to center it */
+}
+
+.books-link:hover {
+  text-decoration: none; /* Remove underline */
+}
